@@ -41,14 +41,14 @@ for (let i = 0; i < 5; i += 1) {
 
 console.log(libraryManager.removeBook(1));
 
-console.log(libraryManager.giveReaderABook({ readerId: 1, bookId: 2 }));
-console.log(libraryManager.giveReaderABook({ readerId: 1, bookId: 2 }));
-console.log(libraryManager.giveReaderABook({ readerId: 1, bookId: 3 }));
-console.log(libraryManager.giveReaderABook({ readerId: 1, bookId: 4 }));
-console.log(libraryManager.giveReaderABook({ readerId: 1, bookId: 5 }));
+console.log(libraryManager.giveReaderBook({ readerId: 1, bookId: 2 }));
+console.log(libraryManager.giveReaderBook({ readerId: 1, bookId: 2 }));
+console.log(libraryManager.giveReaderBook({ readerId: 1, bookId: 3 }));
+console.log(libraryManager.giveReaderBook({ readerId: 1, bookId: 4 }));
+console.log(libraryManager.giveReaderBook({ readerId: 1, bookId: 5 }));
 
-console.log(libraryManager.comebackBook({ readerId: 1, bookId: 2 }));
-console.log(libraryManager.comebackBook({ readerId: 1, bookId: 2 }));
+console.log(libraryManager.removeBookFromReader({ readerId: 1, bookId: 2 }));
+console.log(libraryManager.removeBookFromReader({ readerId: 1, bookId: 2 }));
 
 console.log(
   "undefined, because no return: ",

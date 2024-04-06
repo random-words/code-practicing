@@ -27,7 +27,7 @@ class LibraryManager {
     this.readers.push({ id, name, bookList, bookHistory });
   }
 
-  giveReaderABook({ readerId, bookId }) {
+  giveReaderBook({ readerId, bookId }) {
     const reader = this.readers.find((reader) => reader.id === readerId);
     const book = this.books.find((book) => book.id === bookId);
     const { bookList, bookHistory } = reader;
@@ -45,7 +45,7 @@ class LibraryManager {
     return `${reader.name}, you cannot have this book`;
   }
 
-  comebackBook({ readerId, bookId }) {
+  removeBookFromReader({ readerId, bookId }) {
     const reader = this.readers.find((reader) => reader.id === readerId);
     const book = this.books.find((book) => book.id === bookId);
     const bookIdx = this.books.findIndex((book) => book.id === bookId);
