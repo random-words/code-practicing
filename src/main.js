@@ -1,0 +1,1 @@
+async function turnCallbackToPromise(callback) {}
