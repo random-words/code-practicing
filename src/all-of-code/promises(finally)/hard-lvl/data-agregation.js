@@ -31,6 +31,7 @@ async function agregateData(urls) {
      * All values are non-promises, so the returned promise gets fulfilled
      * const p = Promise.all([1, 2, 3]);
      */
+
     const data = await Promise.all(dataToAgregate);
     await getReprot(data).then(console.log);
     resolve(data);
