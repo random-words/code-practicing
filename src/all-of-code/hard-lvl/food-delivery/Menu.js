@@ -14,6 +14,16 @@ class Menu {
   }
 
   updateDish(oldDish, newDish) {
+    // або можна було деструктуризувати об'єкт і замінити значення ключів
+    // const { key1, key2, key3 } = obj1
+    // obj2.key1 = key1
+    // obj2.key2 = key2
+    // obj2.key3 = key3
+
+    // або... так?
+    // const { key1, key2, key3 } = obj1
+    // obj2 = { key1, key2, key3 }
+    // (да, вот так, но най буде і тот варіант)
     const oldDishToRemove = this.dishes.includes(oldDish);
     const oldDishIdx = this.dishes.indexOf(oldDishToRemove);
     this.dishes.splice(oldDishIdx, 1, newDish);
